@@ -18,7 +18,7 @@ celery -A zhihu.tools.async worker --loglevel=info
 
 * 请求[https://www.zhihu.com](https://www.zhihu.com)获取页面中的_xsrf数据，知乎开启了跨站请求伪造功能，所有的POST请求都必须带上此参数。
 * 提交用户名，密码已经第一步解析的_xsrf参数到[https://www.zhihu.com/login/email](https://www.zhihu.com/login/email)，登陆获取cookies
-* 访问用户主页，以我的主页为例[https://www.zhihu.com/people/weizhi-xiazhi](https://www.zhihu.com/people/weizhi-xiazhi)
+* 访问用户主页，以主页为例[https://www.zhihu.com/people/weizhi-xiazhi](https://www.zhihu.com/people/weizhi-xiazhi)
 
 
 解析的用户信息包括昵称，头像链接，个人基本信息还有关注人的数量和粉丝的数量。这个页面还能获取关注人页面和粉丝页面。
